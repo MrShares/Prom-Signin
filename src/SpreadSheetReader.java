@@ -5,6 +5,8 @@ public class SpreadSheetReader {
 		
 		String danceCSV = "/Users/montanezn8819/Desktop/DanceDance/winter formal list.csv";
 		
+		Directory danceList = new Directory();
+		
 		Scanner files = new Scanner(new File(danceCSV));
 		while(files.hasNext()) {
 		System.out.println(files.nextLine());
