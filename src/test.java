@@ -1,7 +1,7 @@
 
 
 	import java.awt.*;
-
+	import java.awt.event.*;  
 
 import javax.swing.*;  
 
@@ -28,14 +28,21 @@ import javax.swing.*;
 	        f.setLayout(null);    
 	        f.setVisible(true);    
 	        
-			
+	        
 
-	        }
+	        
+            b.addActionListener(new ActionListener(){  
+                public void actionPerformed(ActionEvent e){  
+                        System.out.println("pressed");
+                }  
+                });}  
+
 			
 			
 	        public static void main(String args[])  
 	        {  
 	        	new test();
+
 	            
 	        }  
 		  
