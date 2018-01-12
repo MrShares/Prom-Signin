@@ -27,8 +27,6 @@ public String getName()
 }//getName Method End
 
 <<<<<<< HEAD
-}
-=======
 public void setName(String newLName, String newFName)
 {
 this.LName = newLName;
@@ -41,4 +39,6 @@ boolean check = this.inside;
 return check;
 }//getInside Method End
 }//Student Class End
->>>>>>> origin/StudentCode
+=======
+}
+>>>>>>> 03e04931f75224b66f3cb44529a2f544528c16cb
