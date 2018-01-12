@@ -26,12 +26,20 @@ public String getName()
 	return check;
 }//getName Method End
 
+<<<<<<< HEAD
 //<<<<<<< HEAD
 //=======
 
 
 
 //>>>>>>> NatBranch
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> eoin
+>>>>>>> 6f69eb2f264e5039c1dd53e0dbc0699e530132b5
 public void setName(String newLName, String newFName)
 {//setName Method Start
 
