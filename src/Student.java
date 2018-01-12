@@ -26,6 +26,11 @@ public String getName()
 	return check;
 }//getName Method End
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> eoin
 public void setName(String newLName, String newFName)
 {//setName Method Start
 
