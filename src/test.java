@@ -1,4 +1,4 @@
-package graphics;
+
 
 	import java.awt.*;
 
@@ -12,20 +12,27 @@ import javax.swing.*;
 	        {  
 	        JFrame f= new JFrame("Panel Example");    
 	        JPanel panel=new JPanel();  
-	        panel.setBounds(40,80,200,200);    
-	        panel.setBackground(Color.gray);  
+	        panel.setBounds(0,0,400,287);    
 			JButton b =new JButton();
 			Icon a=new ImageIcon(getClass().getResource("studentcardtemplate.png"));
 			b.setIcon(a);
 			panel.add(b);
+			JPanel panel2=new JPanel();  
+	        panel2.setBounds(0,287,400,574);    
+			JButton c =new JButton();
+			c.setIcon(a);
+			panel2.add(c);
 	        f.add(panel);  
-	                f.setSize(400,400);    
-	                f.setLayout(null);    
-	                f.setVisible(true);    
+	        f.add(panel2);
+	        f.setSize(1000,1000);    
+	        f.setLayout(null);    
+	        f.setVisible(true);    
 	        
-			//Icon a=new ImageIcon(getClass().getResource("studentcardtemplate.bmp"));
+			
 
 	        }
+			
+			
 	        public static void main(String args[])  
 	        {  
 	        	new test();

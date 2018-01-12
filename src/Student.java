@@ -26,9 +26,8 @@ public String getName()
 	return check;
 }//getName Method End
 
-<<<<<<< HEAD
-}
-=======
+
+
 public void setName(String newLName, String newFName)
 {
 this.LName = newLName;
