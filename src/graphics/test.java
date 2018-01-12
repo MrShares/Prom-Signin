@@ -8,7 +8,7 @@ import javax.swing.*;
 
 		public class test{ 
 		      
-			test()  
+			test123()  
 	        {  
 	        JFrame f= new JFrame("Panel Example");    
 	        JPanel panel=new JPanel();  
@@ -21,7 +21,7 @@ import javax.swing.*;
 	        }  
 	        public static void main(String args[])  
 	        {  
-	        new test();  
+	        new test123();  
 	        }  
 		  
 		}  
