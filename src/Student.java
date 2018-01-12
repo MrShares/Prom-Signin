@@ -26,6 +26,12 @@ public String getName()
 	return check;
 }//getName Method End
 
+//<<<<<<< HEAD
+//=======
+
+
+
+//>>>>>>> NatBranch
 public void setName(String newLName, String newFName)
 {//setName Method Start
 
@@ -59,6 +65,9 @@ public void setStudID(int set)
 }
 
 }//Student Class End
+//<<<<<<< HEAD
 
 
 
+//=======
+//>>>>>>> NatBranch
