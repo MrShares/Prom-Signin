@@ -3,11 +3,27 @@ public class Directory {
 	
  private ArrayList<Student> myDanceList = new ArrayList();
  
- public Directory() {//giving me a blank directory to work w/
+ public Directory() 
+ {//giving me a blank directory to work w/
 	 
  }
  
- public void addStudent(Student n){ //adds student to the list
+ public void notChecked() 
+ {//Class notCheckedStart
+ 	for(String j : danceList)
+ 	{//For Loop Start
+ 		boolean inOut = j.getInside();
+ 		
+ 		if(inOut = false)
+ 		{//If Statement Start
+ 		notHere.add(j);
+ 		}//If Statement End
+ 	}//For Loop End
+ }//Class notChecked End
+
+ 
+ public void addStudent(Student n)
+ { //adds student to the list
  myDanceList.add(n);
  }
  

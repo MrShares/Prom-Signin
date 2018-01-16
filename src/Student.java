@@ -26,20 +26,6 @@ public String getName()
 	return check;
 }//getName Method End
 
-//<<<<<<< HEAD
-//<<<<<<< HEAD
-//=======
-
-
-
-//>>>>>>> NatBranch
-//=======
-//<<<<<<< HEAD
-//=======
-
-
-//>>>>>>> eoin
-//>>>>>>> 6f69eb2f264e5039c1dd53e0dbc0699e530132b5
 public void setName(String newLName, String newFName)
 {//setName Method Start
 
@@ -77,11 +63,9 @@ public String toString(){
 	output = LName + " " + FName + " " + studID + " " + inside;
 	return output;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1/16/18-2
 }//Student Class End
-//<<<<<<< HEAD
 
-
-
-//=======
-//>>>>>>> NatBranch
