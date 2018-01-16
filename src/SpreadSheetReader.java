@@ -1,13 +1,19 @@
 import java.io.*;
 import java.util.*;
 public class SpreadSheetReader {
-	public static void main(String[]args) throws IOException {
+	public void String(String location) throws IOException{
 		
-		String danceCSV = "/Users/montanezn8819/Desktop/DanceDance/winter formal list.csv";
+		//location = "/Users/montanezn8819/Desktop/DanceDance/winter formal list.csv";
+		
+		Scanner typed = new Scanner(System.in);
+		
+		System.out.println("Location of file:");
+		
+		location = typed.nextLine();
 		
 		Directory danceList = new Directory();
 		
-		Scanner files = new Scanner(new File(danceCSV));
+		Scanner files = new Scanner(new File(location));
 		
 		while(files.hasNext()) {	
 			String thisLine = new String(files.nextLine());

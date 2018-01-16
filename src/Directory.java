@@ -11,4 +11,11 @@ public class Directory {
  myDanceList.add(n);
  }
  
+ public String toString() {
+	 String output = new String();
+	 for(int i = 0; i < myDanceList.size(); i++) {
+		 output = output + myDanceList.get(i) + "\n";
+	 }
+	 return output;
+ }
 }

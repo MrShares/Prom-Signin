@@ -72,6 +72,12 @@ public void setStudID(int set)
 	this.studID = set;
 }
 
+public String toString(){
+	String output = new String();
+	output = LName + " " + FName + " " + studID + " " + inside;
+	return output;
+}
+
 }//Student Class End
 //<<<<<<< HEAD
 
