@@ -2,6 +2,9 @@ import java.util.*;
 public class Directory {
 	
  private ArrayList<Student> myDanceList = new ArrayList();
+ private ArrayList<Student> notHere = new ArrayList();
+ private ArrayList<Student> theyRHere = new ArrayList();
+ 
  
  public Directory() {//giving me a blank directory to work w/
 	 
