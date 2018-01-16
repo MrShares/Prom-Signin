@@ -23,9 +23,9 @@ public class SpreadSheetReader {
 					n.setStudID(theID);
 					danceList.addStudent(n);
 					
-		}
-			
+		}			
 	}
+		System.out.println(danceList);
 	}
 	
 	
