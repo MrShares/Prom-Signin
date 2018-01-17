@@ -8,6 +8,9 @@ public class SpreadSheetReader {
 	public static void SpreadSheetReader() throws IOException{ //method to read a file and make it into a directory
 		
 		//location = "/Users/montanezn8819/Desktop/DanceDance/winter formal list.csv"; <-- testing purposes
+		int error = 0; //counter to see if an error has occured
+		int goodFile = 0;//counter to see if I have found a valid file
+		
 		
 		Scanner typed = new Scanner(System.in);	//prompting user
 		System.out.println("Location of file:");//for the location
@@ -15,8 +18,28 @@ public class SpreadSheetReader {
 		
 		Directory danceList = new Directory();//creating a new directory to hold the students from csv
 		
+		while(goodFile == 0) { //while loop that runs while i dont have a file
+		error = 0;//resetting error counter
+		try { //trying to file the file
 		Scanner files = new Scanner(new File(location)); //creating a new scanner to read in the file
+		} catch(FileNotFoundException n) { //catching the file not found exception
+			System.out.println(n + "\nMake sure the adress is typed correctly!"); //reminding user to see if they spelled everything right
+			error = 1;//adding to error counter
+		} 
+		
+		if(error != 1) {	//if there are no errors,
+			goodFile = 1;	//adding to my good file counter and thus getting out of the while loop
+		}else{
+		System.out.println("Location of file:");//reprompting for a file as many times as it takes
+		location = typed.nextLine();
+		}
+		}
 	
+		
+		if(error == 0) {//only running if there are no errors
+		Scanner files = new Scanner(new File(location));//another new scanner that will actually be used
+		
+		
 		while(files.hasNext()) { //checking to see if ive gotten to the bottom of the csv file
 			
 			String thisLine = new String(files.nextLine());//making a string the represents the current line
@@ -50,7 +73,8 @@ public class SpreadSheetReader {
 	}
 		files.close();//closing the file
 		
-		//System.out.println(danceList); <-- for testing to see if all students made it in
+		//System.out.println(danceList); //<-- for testing to see if all students made it in
+		}
 	}
 	
 	

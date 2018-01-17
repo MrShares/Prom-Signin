@@ -63,9 +63,6 @@ public String toString(){
 	output = LName + " " + FName + " " + studID + " " + inside;
 	return output;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 1/16/18-2
 }//Student Class End
 
