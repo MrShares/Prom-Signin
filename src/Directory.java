@@ -5,7 +5,6 @@ public class Directory {
  private ArrayList<Student> notHere = new ArrayList();
  private ArrayList<Student> theyRHere = new ArrayList();
  
- 
  public Directory() 
  {//giving me a blank directory to work w/
 	 
@@ -13,13 +12,13 @@ public class Directory {
  
  public void notChecked() 
  {//Class notCheckedStart
- 	for(String j : danceList)
+ 	for(int i =0; i < myDanceList.size(); i++)
  	{//For Loop Start
- 		boolean inOut = j.getInside();
+ 		boolean inOut = myDanceList.get(i).getInside();
  		
  		if(inOut = false)
  		{//If Statement Start
- 		notHere.add(j);
+ 		notHere.add(myDanceList.get(i));
  		}//If Statement End
  	}//For Loop End
  }//Class notChecked End

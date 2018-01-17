@@ -58,11 +58,16 @@ public void setStudID(int set)
 	this.studID = set;
 }
 
-public String toString(){
+public String toString()
+{//Start String toString
 	String output = new String();
 	output = LName + " " + FName + " " + studID + " " + inside;
 	return output;
+<<<<<<< HEAD
 }
 
+=======
+}//End String toString
+>>>>>>> 1/17/18-Jakob
 }//Student Class End
 

@@ -2,5 +2,9 @@
 <classpath>
 	<classpathentry excluding="graphics/" kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/allenj9593/Desktop/appframework-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/allenj9593/Desktop/swing-layout-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/allenj9593/Desktop/swing-worker-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/allenj9593/Desktop/swingx-autocomplete-1.6.5-1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
