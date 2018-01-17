@@ -3,15 +3,13 @@
 import java.awt.*;
 import java.awt.event.*;  
 import javax.swing.*;  
-
-
 		public class cardButton{ 
-		      
-			JPanel completeCard = new JPanel();
-			cardButton()  
+			JFrame f= new JFrame("test");
+			JLayeredPane completeCard = new JLayeredPane();
+			cardButton(int x)  
 	        {  
 			
-			completeCard.setSize(400, 287);
+			completeCard.setBounds(0 + (401* x - (x+1)), 0 +(288 * x - (x+1)), 400, 287);
 			JButton studentCard =new JButton();
 			Icon cardImg=new ImageIcon(getClass().getResource("studentcardtemplate.png"));
 			studentCard.setIcon(cardImg);        
@@ -20,38 +18,48 @@ import javax.swing.*;
                         System.out.println("pressed");
                 }  
                 });
-            completeCard.add(studentCard);
+            studentCard.setBounds(0, 0, 400, 287);
+            completeCard.add(studentCard,new Integer(1));
             }  
 			
 			
 			
 	        public void createAndDisplayButton(Student x)  
 	        {  
-	        	completeCard.setLayout(new FlowLayout());
 	        	String name = x.getName();
 	        	String StudId =Integer.toString(x.getStudID());
-	        	JLabel nameLabel = new JLabel();
-	        	JLabel StudIdLabel = new JLabel();
-	        	StudIdLabel.setText(StudId);
-	        	nameLabel.setText(name);
-	        	nameLabel.setLocation(85, 37);
-	        	StudIdLabel.setLocation(115, 160);
-	        	completeCard.add(nameLabel);
-	        	completeCard.add(StudIdLabel);
-	        	 
-	        	JFrame f= new JFrame("test");
+	        	JLabel nameText = new JLabel(name);
+	        	JLabel StudIdText = new JLabel(StudId);
+	        	nameText.setBounds(77, 40, 161, 12);
+	        	StudIdText.setBounds(110, 158, 90, 15);
 	        	
-	            f.setSize(1000,1300);  
-	            f.setLayout(null);  
-	            f.setVisible(true);  
-	            f.add(completeCard); //////////
+	        	completeCard.add(nameText, new Integer(3));
+	        	completeCard.add(StudIdText,new Integer(3));
+ 
+
+	            
 	        	
 	        }  
+	        
+	        public void addframe()
+	        {
+	        	
+	        	
+	        	
+	            f.setSize(1000,1300);  
+	            f.add(completeCard);
+	            f.setLayout(null);  
+	            f.setVisible(true); 
+	        }
 	        public static void main(String[] args)
 	        {
-	        	cardButton test = new cardButton();
-	        	Student a = new Student ("smith", "bob", 111111, false);
+	        	cardButton test = new cardButton(0);
+	        	Student a = new Student ("smith000000000000000", "bob", 111111, false);
 	        	test.createAndDisplayButton(a);
+	        	cardButton test1 = new cardButton(1);
+	        	test1.createAndDisplayButton(a);
+	        	test.addframe();
+	        	test1.addframe();
 	        	
 	        	
 	        }
