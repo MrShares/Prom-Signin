@@ -1,8 +1,4 @@
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1/18/18
 import java.awt.*;
 import java.awt.event.*;  
 import javax.swing.*;  
@@ -66,10 +62,4 @@ import javax.swing.*;
 	        	
 	        	
 	        }
-	        
-		  
-<<<<<<< HEAD
-} 
-=======
-}
->>>>>>> 1/18/18
+		}
