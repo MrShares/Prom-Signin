@@ -6,5 +6,6 @@
 	<classpathentry kind="lib" path="C:/Users/allenj9593/Desktop/swing-layout-1.0.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/allenj9593/Desktop/swing-worker-1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/allenj9593/Desktop/swingx-autocomplete-1.6.5-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/allenj9593/Desktop/swingx-common-1.6.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
