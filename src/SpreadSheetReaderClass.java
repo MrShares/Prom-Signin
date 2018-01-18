@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
-public class SpreadSheetReader {
-	public static void main(String[]args) throws IOException { //testing method
+public class SpreadSheetReaderClass {
+	public static void main(String[]args) throws IOException  { //testing method
 		SpreadSheetReader();
 	}
 	
