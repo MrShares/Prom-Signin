@@ -3,10 +3,10 @@
 import java.awt.*;
 import java.awt.event.*;  
 import javax.swing.*;  
-		public class cardButton{ 
+		public class cardbutton{ 
 			JFrame f= new JFrame("test");
 			JLayeredPane completeCard = new JLayeredPane();
-			cardButton(int x)  
+			cardbutton(int x)  
 	        {  
 			
 			completeCard.setBounds(0 + (401* x - (x+1)), 0 +(288 * x - (x+1)), 400, 287);
@@ -53,10 +53,10 @@ import javax.swing.*;
 	        }
 	        public static void main(String[] args)
 	        {
-	        	cardButton test = new cardButton(0);
+	        	cardbutton test = new cardbutton(0);
 	        	Student a = new Student ("smith000000000000000", "bob", 111111, false);
 	        	test.createAndDisplayButton(a);
-	        	cardButton test1 = new cardButton(1);
+	        	cardbutton test1 = new cardbutton(1);
 	        	test1.createAndDisplayButton(a);
 	        	test.addframe();
 	        	test1.addframe();
